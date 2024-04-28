@@ -1,0 +1,56 @@
+@mixin flexCentered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexContainer {
+    @include flexCentered;
+    height: 100%;
+    padding: 0px 20px 0px 20px;
+}
+
+.authForm {
+    @include flexCentered;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 30px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    max-width: 740px;
+    height: 500px;
+}
+
+.btnHolder {
+    @include flexCentered;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    border: none;
+    background-color: #1c90ed;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    width: 165px;
+    height: 70px;
+    border-radius: 10px;
+    transition: all 300ms ease-in;
+}
+
+.button:hover {
+    background-color: white;
+    color: #1c90ed;
+    transition: all 300ms ease-in;
+}
+
+.button:active {
+    background-color: #eeeeee;
+    transition: all 150ms ease-in;
+}
