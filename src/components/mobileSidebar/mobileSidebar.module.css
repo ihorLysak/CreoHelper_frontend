@@ -1,4 +1,4 @@
-.sidebar {
+.mobileSidebar {
     display: flex;
     align-items: stretch;
     flex-direction: column;
@@ -19,7 +19,19 @@
 }
 
 @media screen and (max-width: 450px) {
-    .sidebar {
-        display: none;
+    .closeSidebarBtn {
+        display: block;
+    }
+
+    .mobileSidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .sidebarHeader {
+        justify-content: space-between;
     }
 }
