@@ -16,6 +16,23 @@ export function MainPage() {
             <MobileHeader />
             <div className={styles.channelsGrid}>
                 <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
+                <ChannelBtn data={channel} />
             </div>
         </div>
     );

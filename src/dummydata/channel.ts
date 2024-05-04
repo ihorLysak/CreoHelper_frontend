@@ -1,6 +1,6 @@
 export const channel = {
     name: 'Афіша Києва',
     linksAmount: 5,
-    acceptedAmount: 100,
-    unsub: -25,
+    requests: 100,
+    unsub: 25,
 };

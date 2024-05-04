@@ -4,20 +4,21 @@ interface ChannelBtnProps {
     data: {
         name: string;
         linksAmount: number;
-        acceptedAmount: number;
+        requests: number;
         unsub: number;
     };
 }
 
 export function ChannelBtn({ data }: ChannelBtnProps) {
+    const subsStyle = data.unsub >= 0 ? styles.surplus : styles.deficit;
     return (
         <div className={styles.channelBtn}>
             <div className={styles.avatar}></div>
-            <span>Афіша Києва</span>
+            <span>{data.name}</span>
             <div className={styles.stats}>
-                <span>5</span>
-                <span>+100</span>
-                <span>-25</span>
+                <span className={styles.linksAmount}>{data.linksAmount}</span>
+                <span className={styles.requests}>{data.requests}</span>
+                <span className={subsStyle}>{data.unsub}</span>
             </div>
         </div>
     );

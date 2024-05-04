@@ -1,17 +1,37 @@
 .channelBtn {
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .avatar {
     height: 120px;
     width: 120px;
-    border-radius: 60px;
+    border-radius: 100px;
     background-color: black;
 }
 
 .stats {
+    display: flex;
+    gap: 10px;
+}
+
+.linksAmount {
+    color: #0d99ff;
+}
+
+.requests {
+    color: #ffac4a;
+}
+
+.surplus {
+    color: #22cb00;
+}
+
+.deficit {
+    color: #c30000;
 }
