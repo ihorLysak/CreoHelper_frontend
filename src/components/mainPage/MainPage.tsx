@@ -4,6 +4,7 @@ import { ChannelBtn } from '../channelBtn/ChannelBtn';
 import { MobileHeader } from '../mobileHeader/MobileHeader';
 import { useAppSelector } from '../../app/hooks';
 import { MobileSidebar } from '../mobileSidebar/MobileSidebar';
+import { channel } from '../../dummydata/channel';
 
 export function MainPage() {
     const isOpen = useAppSelector((state) => state.sidebar.isOpen);
@@ -14,37 +15,7 @@ export function MainPage() {
             {isOpen && <MobileSidebar />}
             <MobileHeader />
             <div className={styles.channelsGrid}>
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
-                <ChannelBtn />
+                <ChannelBtn data={channel} />
             </div>
         </div>
     );

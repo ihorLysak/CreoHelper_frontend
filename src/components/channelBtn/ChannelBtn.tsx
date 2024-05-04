@@ -1,6 +1,15 @@
 import styles from './channelBtn.module.css';
 
-export function ChannelBtn() {
+interface ChannelBtnProps {
+    data: {
+        name: string;
+        linksAmount: number;
+        acceptedAmount: number;
+        unsub: number;
+    };
+}
+
+export function ChannelBtn({ data }: ChannelBtnProps) {
     return (
         <div className={styles.channelBtn}>
             <div className={styles.avatar}></div>
