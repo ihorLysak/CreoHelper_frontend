@@ -1,9 +1,4 @@
 @media screen and (max-width: 450px) {
-    .gridContainer {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
     .channelsGrid {
         display: grid;
         grid-template-rows: 180px;
@@ -14,12 +9,6 @@
 }
 
 @media screen and (min-width: 451px) {
-    .gridContainer {
-        display: grid;
-        grid-template-columns: 240px 1fr;
-        height: 100%;
-    }
-
     .channelsGrid {
         display: flex;
         align-items: flex-start;
