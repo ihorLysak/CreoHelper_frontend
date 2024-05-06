@@ -21,18 +21,6 @@ export function MainPage() {
                 <ChannelBtn data={channel} />
                 <ChannelBtn data={channel} />
                 <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
-                <ChannelBtn data={channel} />
             </div>
         </div>
     );

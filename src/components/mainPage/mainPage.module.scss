@@ -21,10 +21,11 @@
     }
 
     .channelsGrid {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-template-rows: repeat(5, 1fr);
-        padding: 20px 60px;
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        gap: 40px 0px;
+        padding: 30px 60px;
     }
 }
