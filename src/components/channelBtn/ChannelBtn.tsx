@@ -1,4 +1,6 @@
 import styles from './channelBtn.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 interface ChannelBtnProps {
     data: {
@@ -16,7 +18,10 @@ export function ChannelBtn({ data }: ChannelBtnProps) {
             <div className={styles.avatar}></div>
             <span>{data.name}</span>
             <div className={styles.stats}>
-                <span className={styles.linksAmount}>{data.linksAmount}</span>
+                <span className={styles.linksAmount}>
+                    {data.linksAmount}
+                    <FontAwesomeIcon icon={faLink} />
+                </span>
                 <span className={styles.requests}>{data.requests}</span>
                 <span className={subsStyle}>{data.unsub}</span>
             </div>
