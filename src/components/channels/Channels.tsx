@@ -5,6 +5,7 @@ import { channel } from '../../dummydata/channel';
 export function Channels() {
     return (
         <div className={styles.channelsGrid}>
+            asdas
             <ChannelBtn data={channel} />
             <ChannelBtn data={channel} />
             <ChannelBtn data={channel} />
