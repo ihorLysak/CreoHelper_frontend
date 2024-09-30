@@ -1,7 +1,7 @@
 import styles from './sidebarWrapper.module.css';
 import { Sidebar } from '../sidebar/Sidebar';
 import { MobileHeader } from '../mobileHeader/MobileHeader';
-import { useAppSelector } from '../../app/hooks';
+import { useAppSelector } from '~/app/hooks';
 import { MobileSidebar } from '../mobileSidebar/MobileSidebar';
 import { Outlet } from 'react-router-dom';
 

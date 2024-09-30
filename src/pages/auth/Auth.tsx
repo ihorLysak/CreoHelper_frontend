@@ -1,9 +1,9 @@
-import styles from './authPage.module.scss';
-import { Logo } from '../logo/Logo';
+import styles from './auth.module.scss';
+import { Logo } from '../../libs/components/components';
 import { faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export function AuthPage() {
+export function Auth() {
     return (
         <div className={styles.flexContainer}>
             <div className={styles.authForm}>

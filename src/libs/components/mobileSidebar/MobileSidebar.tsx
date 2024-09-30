@@ -3,8 +3,8 @@ import { Logo } from '../logo/Logo';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { useAppDispatch } from '../../app/hooks';
-import { toggleOpen } from '../../features/sidebar/sidebarSlice';
+import { useAppDispatch } from '~/app/hooks';
+import { toggleOpen } from '~/features/sidebar/sidebarSlice';
 
 export function MobileSidebar() {
     const dispatch = useAppDispatch();

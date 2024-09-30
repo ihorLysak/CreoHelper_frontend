@@ -1,14 +1,15 @@
 import { Route, Routes } from 'react-router-dom';
-import { AuthPage } from './components/authPage/AuthPage';
-import { Channels } from './components/channels/Channels';
-import { SidebarWrapper } from './components/sidebarWrapper/SidebarWrapper';
+import { Auth, Channels, Channel } from '~/pages/pages';
+import { SidebarWrapper } from '~/libs/components/components';
+import { AppPath } from '~/libs/enums/enums';
 
 function App() {
     return (
         <Routes>
-            <Route path="auth" element={<AuthPage />} />
-            <Route path="dashboard" element={<SidebarWrapper />}>
-                <Route path="channels" element={<Channels />} />
+            <Route path={AppPath.AUTH} element={<Auth />} />
+            <Route path={AppPath.MAIN} element={<SidebarWrapper />}>
+                <Route path={AppPath.CHANNELS} element={<Channels />} />
+                <Route path={AppPath.CHANNEL} element={<Channel />} />
             </Route>
         </Routes>
     );
