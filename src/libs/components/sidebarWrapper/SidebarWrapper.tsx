@@ -9,11 +9,11 @@ export function SidebarWrapper() {
     const isOpen = useAppSelector((state) => state.sidebar.isOpen);
     console.log('is open:', isOpen);
     return (
-        <div className={styles.gridContainer}>
+        <section className={styles.gridContainer}>
             <Sidebar />
             {isOpen && <MobileSidebar />}
             <MobileHeader />
             <Outlet />
-        </div>
+        </section>
     );
 }
