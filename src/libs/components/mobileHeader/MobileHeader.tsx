@@ -2,8 +2,8 @@ import { Logo } from '../logo/Logo';
 import styles from './mobileHeader.module.css';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useAppDispatch } from '../../../app/hooks';
-import { toggleOpen } from '../../../features/sidebar/sidebarSlice';
+import { useAppDispatch } from '~/app/hooks';
+import { toggleOpen } from '~/features/sidebar/sidebarSlice';
 
 export function MobileHeader() {
     const dispatch = useAppDispatch();
